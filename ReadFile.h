@@ -12,6 +12,7 @@ struct ReadFile
    bool _eof;
    bool closed;
 };
+//inserted comment
 
 ReadFile* createReadFile(const char* file_name);
 void destroyReadFile(ReadFile* rf);
