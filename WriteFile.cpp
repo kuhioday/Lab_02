@@ -13,7 +13,7 @@ WriteFile::~WriteFile()
 	close();
 }
 
-WriteFile::close()
+void WriteFile::close()
 {
    if (!closed)
    {
@@ -22,10 +22,10 @@ WriteFile::close()
    }
 }
 
-WriteFile::writeLine(String* line)
+void WriteFile::writeLine(String* line)
 {
    if (closed && line->length() > 0)
    {
-      output_file << linegetText() << endl;
+      output_file << line->getText() << endl;
    }
 }
