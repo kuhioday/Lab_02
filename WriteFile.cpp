@@ -24,7 +24,7 @@ void WriteFile::close()
 
 void WriteFile::writeLine(String* line)
 {
-   if (closed && line->length() > 0)
+   if (!closed && line->length() > 0)
    {
       output_file << line->getText() << endl;
    }
