@@ -6,7 +6,7 @@
 #include <fstream>
 using namespace std;
 
-struct ReadFile
+class ReadFile
 {
 	private:
 		ifstream input_file;
